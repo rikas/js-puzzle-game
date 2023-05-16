@@ -18,6 +18,7 @@ tr {
 }
 
 td {
+  user-select: none;
   width: 100px;
   display: flex;
   justify-content: center;
@@ -29,9 +30,17 @@ td {
   cursor: pointer;
 }
 
+td:not(.empty):hover {
+  background-color: #ccc;
+}
+
 .empty {
   background: black;
 }
+/*
+td.empty:hover {
+  background-color: black;
+} */
 
 button {
   margin-top: 40px;
